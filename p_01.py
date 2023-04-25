@@ -15,7 +15,6 @@ def postalcode_check(code: str) -> bool:
             return False
     return True
 
-print(help(postalcode_check))
-codes = ["alieotehdkf", "12345-67890", "34987-89325", "r46522-79879234", "2875345235738"]
+codes = ["alieotehdkf", "12345-67890", "34987-89325", "r46522-79879234", "2875345235738", "49812-02784", "7989f-38542"]
 res = [item for item in codes if postalcode_check(item)]
 print(res)
