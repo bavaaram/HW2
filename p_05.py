@@ -1,6 +1,11 @@
 #! /usr/bin/python3
 
-def binary_search(case, *array, lbound=None, hbound=None):
+def binary_search(case: int, *array: (int, float), lbound=None: (int, float), hbound=None: (int, float)) -> (int, float):
+    """
+    This function take the case that we want to find it's index,
+    list of sorted numbers, and a lower and a upper bound.
+    this function work with Binary search Algorithm.
+    """
     if lbound == None and hbound == None:
         lbound, hbound = 0, len(array) - 1
     mid = int((lbound + hbound) / 2)
